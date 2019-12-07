@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+  before_action :authenticate_user!
   helper_method :get_manufacturer
 
   def index

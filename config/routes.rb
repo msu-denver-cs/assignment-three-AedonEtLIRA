@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :car_parts
   resources :car_manufacturers
   resources :cars, :shallow => true do
