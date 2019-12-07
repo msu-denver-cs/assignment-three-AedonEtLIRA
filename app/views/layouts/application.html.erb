@@ -9,6 +9,21 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <table>
+    <tr>
+      <td>
+        <%= link_to "Cars", :cars %>
+      </td>
+      <td>
+        <%= link_to "Manufacturer", :car_manufacturers %>
+      </td>
+      <td>
+        <%= link_to "Car Parts", :car_parts %>
+      </td>
+    </tr>
+  </table>
+  <hr>
+
   <body>
     <%= yield %>
   </body>
